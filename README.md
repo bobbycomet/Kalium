@@ -43,7 +43,7 @@ Select the folder containing:
 1.1.0 will have some more features such as: 
 
 - **Upgrading USVFS to v0.5.7.2**. This feature will be automatic for new MO2 installs, while older MO2 installs will get a button in settings to update any MO2 instance via the prefix chosen. This will be more compatible if you use Wine/Proton 10.20+. This will create a backup as needed.
-- **Better support for multiple drives**. As it stand, it already works with multi-drive support, but "max_memory=" when having to deal with multiple drives and can cause issues with some tools. However, 1.0.0 has already proven to work just fine with tools like the Pandora Behaviour Engine Plus.
+- **Better support for multiple drives**. As it stand, it already works with multi-drive support, but "max_memory=" when having to deal with multiple drives can cause issues with some tools. However, 1.0.0 has already proven to work just fine with tools like the Pandora Behaviour Engine Plus.
 - **Better support for GOG and Heroic**. This should already work pretty well with them, but I will be focusing on more compatibility features.
 - **Integration with the Griffin Updater**. Griffin Updater is another one of my projects, and can update AppImages, which will be useful for Kalium. No need to go to releases every update with this pairing.
 - More CLI commands for those that prefer them.
