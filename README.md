@@ -24,7 +24,7 @@ Select the folder containing:
 
 - ModOrganizer.exe
 
--Choose the Proton version and start the setup.
+- Choose the Proton version and start the setup.
 
 - Kalium will configure the Proton/Steam environment without downloading another copy of MO2.
 
