@@ -1,2 +1,2 @@
 # Kalium
-An MO2 environment builder that helps modding Bethesda games with NXM, backpatching Skyrim, handling prefixes, installing MO2 plugins, reconnecting NXK per prefix, auto-installs instances to non-steam games, and is disconnected from MO2, so the AppImage only handles the environment, not MO2. Based off NaK.
+An MO2 environment builder that helps modding Bethesda games with NXM, backpatching Skyrim, handling prefixes, installing MO2 plugins, reconnecting NXK per prefix, auto-installs instances to non-steam games, and is disconnected from MO2, so the AppImage only handles the environment, not MO2. Based off [NaK](https://github.com/bobbycomet/NaK) but redesigned from the ground up. 
