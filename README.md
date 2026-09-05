@@ -14,6 +14,8 @@ Version 1.0.0 works as is, but as stated, some limitations, but tools like Pando
 
 [First setup](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup)
 
+[Screenshots](https://github.com/bobbycomet/Kalium/tree/main/screenshots)
+
 ---
 
 ## What if I used NaK before, and have the MO2 and prefix still installed?
