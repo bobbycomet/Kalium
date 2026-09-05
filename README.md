@@ -35,8 +35,8 @@ Select the folder containing:
 1.1.0 will have some more features such as: 
 
 - **Upgrading USVFS to v0.5.7.2**. This feature will be automatic for new MO2 installs, while older MO2 installs will get a button in settings to update any MO2 instance via the prefix chosen. This will be more compatible if you use Wine/Proton 10.20+. This will create a backup as needed.
-- **LOOT.exe and installation, as well as register with MO2**. This feature will be in Beta as it does not launch from MO2 properly, and usually times out after 130ms. So, why add it? To prepare for a fix in the future. You will be able to launch it via Wine, however, I am still working on proper comp paths to make sure the MO2 and game folders allow LOOT to see the mods, as the instance never touches your actual game files. For now, it will default to Skyrim Special Edition, but it can be changed. 
 - **Better support for multiple drives**. As it stand, it already works with multi-drive support, but "max_memory=" when having to deal with multiple drives and can cause issues with some tools. However, 1.0.0 has already proven to work just fine with tools like the Pandora Behaviour Engine Plus.
 - **Better support for GOG and Heroic**. This should already work pretty well with them, but I will be focusing on more compatibility features.
 - **Integration with the Griffin Updater**. Griffin Updater is another one of my projects, and can update AppImages, which will be useful for Kalium. No need to go to releases every update with this pairing.
 - More CLI commands for those that prefer them.
+- Decided against keeping the LOOT.exe install, as it only works in Wine, and could not see MO2 files, this is LOOT/MO2 issue, you can still use the integrated LOOT in MO2.
