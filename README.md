@@ -10,7 +10,7 @@ Some limitations on LOOT, use the internal MO2 LOOT until that is patched later.
 
 Back patch for Skyrim supports 1.5.97, 1.6.640, 1.6.1130, and 1.6.1170. A back up will automatically be made.
 
-Version 1.0.0 works as is, but as stated, some limitations, but tools like Pandora engine do work, LOOT is the outlier because of the way Proton handles MO2, and prefers Wine to launch. A dix is already being investigated. Documentation soon to come.
+Version 1.0.0 works as is, but as stated, some limitations, but tools like Pandora engine do work, LOOT is the outlier because of the way Proton handles MO2 and the virtual file system (VFS), and prefers Wine to launch. [Documentation](https://github.com/bobbycomet/Kalium/wiki)
 
 [First setup](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup)
 
