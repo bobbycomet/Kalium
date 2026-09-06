@@ -65,18 +65,18 @@ Decided to give adding the LOOT.exe one more try, and finally, it worked. What h
 
 ```
 6\arguments=
-6\binary=Z:/mnt/sda1/MO2/LOOT/run_loot.bat
+6\binary=Z:/path/MO2 instance/LOOT/run_loot.bat
 6\hide=false
 6\ownicon=true
 6\steamAppID=
 6\title=LOOT
 6\toolbar=true
-6\workingDirectory=Z:/mnt/sda1/MO2/LOOT
+6\workingDirectory=Z:/path/MO2 instance/LOOT
 ```
 This forces LOOT to look at the .bat file and it stores in that .bat file:
 
 ```
-cat > /mnt/sda1/MO2/LOOT/run_loot.bat << 'EOF'
+cat > /path/MO2 instance/LOOT/run_loot.bat << 'EOF'
 @echo off
 cd /d "%~dp0"
 LOOT.exe --game="The game you chose"
@@ -89,13 +89,13 @@ Once that .bat file has run, you will see this in the ModOrganizer.ini file:
 
 ```
 6\arguments="--game=Skyrim Special Edition"
-6\binary=Z:/mnt/sda1/MO2/LOOT/LOOT.exe
+6\binary=Z:/path/MO2 instance/LOOT/LOOT.exe
 6\hide=false
 6\ownicon=true
 6\steamAppID=
 6\title=LOOT
 6\toolbar=true
-6\workingDirectory=Z:/mnt/sda1/MO2/LOOT
+6\workingDirectory=Z:/path/MO2 instance/LOOT
 ```
 
 As long as you do not forcibly change the file location, it will work reliably. I already tested this out by changing a location of SKSE to be sure it does not silently overwrite the INI file to use Z:\...
