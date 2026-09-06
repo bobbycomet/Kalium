@@ -51,6 +51,7 @@ Select the folder containing:
 - Set VFS max memory to 2 GB
 - Add a MO2 pluging not in the market menu by pasting its link. Needs your API key to work, a link to get it is provided in the app.
 - Marketplace catalog: NMC (#1899) + Sync Plugins (#47325) + Collections
+- Backpatch for Fallout 4, Starfield, Cyberpunk, and The Witcher 3 using app_ids to make sure each game is targeted. You just choose your game, copy the commands, steam console opens, paste the commands, click "apply-already downloaded depots." No need to move files, no need to make backups, all of that is automated, the only thing not automated is copying and pasting the commands.
 
 Dynamic libraryfolders.vdf parsing:
 
