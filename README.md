@@ -6,7 +6,7 @@ Kalium installs or attaches MO2 as a **non-Steam game** under Proton, prepares t
 
 An MO2 environment builder that helps modding Bethesda games with NXM, backpatching Skyrim, handling prefixes, installing MO2 plugins, reconnecting NXK per prefix, auto-installs instances to non-steam games, and is disconnected from MO2, so the AppImage only handles the environment, not MO2. Based off [NaK](https://github.com/bobbycomet/NaK) but redesigned from the ground up. 
 
-Some limitations on LOOT, use the internal MO2 LOOT until that is patched later.
+Some limitations on LOOT, use the internal MO2 LOOT until that is patched later. Found a reliable fix, and it will be implemented in 1.1.0.
 
 Back patch for Skyrim supports 1.5.97, 1.6.640, 1.6.1130, and 1.6.1170. A back up will automatically be made.
 
@@ -47,7 +47,6 @@ Select the folder containing:
 - **Better support for GOG and Heroic**. This should already work pretty well with them, but I will be focusing on more compatibility features.
 - **Integration with the Griffin Updater**. Griffin Updater is another one of my projects, and can update AppImages, which will be useful for Kalium. No need to go to releases every update with this pairing.
 - More CLI commands for those that prefer them.
-- Decided against keeping the LOOT.exe install, as it only works in Wine, and could not see MO2 files, this is LOOT/MO2 issue, you can still use the integrated LOOT in MO2.
 - Set VFS max memory to 2 GB
 - Add a MO2 pluging not in the market menu by pasting its link. Needs your API key to work, a link to get it is provided in the app.
 - Marketplace catalog: NMC (#1899) + Sync Plugins (#47325) + Collections
@@ -59,6 +58,47 @@ Dynamic libraryfolders.vdf parsing:
 - find_library_for_app(489830) — which drive owns Skyrim SE
 - find_compatdata_for_app(489830) → e.g., /mnt/sdb1/SteamLibrary/steamapps/compatdata/489830
 - find_pfx_for_app() used when resolving game Proton prefixes
+
+Decided to give adding the LOOT.exe one more try, and finally, it worked. What happens when you press install LOOT:
+- LOOT portable is downloaded and installed.
+- ModOrganizer.ini is edited with a command
+
+```
+6\arguments=
+6\binary=Z:/mnt/sda1/MO2/LOOT/run_loot.bat
+6\hide=false
+6\ownicon=true
+6\steamAppID=
+6\title=LOOT
+6\toolbar=true
+6\workingDirectory=Z:/mnt/sda1/MO2/LOOT
+```
+This forces LOOT to look at the .bat file and it stores in that .bat file:
+
+```
+cat > /mnt/sda1/MO2/LOOT/run_loot.bat << 'EOF'
+@echo off
+cd /d "%~dp0"
+LOOT.exe --game="The game you chose"
+EOF
+```
+
+This makes it reliably launch LOOT.exe with your mod list. Even if it switches to Z:\... in the editor it will not be launching that way, as it will launch as Z:/... every time, and no crashes or failed 130ms LOOT renders because of CEF (Chromium Embedded Framework). 
+
+Once that .bat file has run, you will see this in the ModOrganizer.ini file:
+
+```
+6\arguments="--game=Skyrim Special Edition"
+6\binary=Z:/mnt/sda1/MO2/LOOT/LOOT.exe
+6\hide=false
+6\ownicon=true
+6\steamAppID=
+6\title=LOOT
+6\toolbar=true
+6\workingDirectory=Z:/mnt/sda1/MO2/LOOT
+```
+
+As long as you do not forcibly change the file location, it will work reliably. I already tested this out by changing a location of SKSE to be sure it does not silently overwrite the INI file to use Z:\...
 
 Diagnostics:
 
