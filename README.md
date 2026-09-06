@@ -48,3 +48,5 @@ Select the folder containing:
 - **Integration with the Griffin Updater**. Griffin Updater is another one of my projects, and can update AppImages, which will be useful for Kalium. No need to go to releases every update with this pairing.
 - More CLI commands for those that prefer them.
 - Decided against keeping the LOOT.exe install, as it only works in Wine, and could not see MO2 files, this is LOOT/MO2 issue, you can still use the integrated LOOT in MO2.
+- Set VFS max memory to 2 GB
+- Add a MO2 pluging not in the market menu by pasting its link. Needs your API key to work, a link to get it is provided in the app.
