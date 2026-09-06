@@ -50,3 +50,25 @@ Select the folder containing:
 - Decided against keeping the LOOT.exe install, as it only works in Wine, and could not see MO2 files, this is LOOT/MO2 issue, you can still use the integrated LOOT in MO2.
 - Set VFS max memory to 2 GB
 - Add a MO2 pluging not in the market menu by pasting its link. Needs your API key to work, a link to get it is provided in the app.
+- Marketplace catalog: NMC (#1899) + Sync Plugins (#47325) + Collections
+
+Dynamic libraryfolders.vdf parsing:
+
+- parse_library_folders_detailed() — path + AppID set per library
+- find_library_for_app(489830) — which drive owns Skyrim SE
+- find_compatdata_for_app(489830) → e.g., /mnt/sdb1/SteamLibrary/steamapps/compatdata/489830
+- find_pfx_for_app() used when resolving game Proton prefixes
+
+Diagnostics:
+
+```
+kalium check-steam
+```
+
+Shows libraries, AppID ownership (Skyrim SE / FNV / FO4), and:
+
+```
+export STEAM_COMPAT_MOUNTS=...
+```
+
+MO2 will still use its own non-Steam compatdata (Steam’s rule for shortcuts). Game files on other drives are reached via STEAM_COMPAT_MOUNTS, not by sharing game prefixes (that would break multi-game MO2 instances).
