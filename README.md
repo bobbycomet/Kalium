@@ -38,9 +38,13 @@ Select the folder containing:
 
 ---
 
+**Because of 1.7.99 and 1.7.104, some of the mods I would typically use are not working (mostly SKSE mods), and some mods are having issues installing, which is slowing testing. This is not because of Kalium itself; it is NXM and mod issues. What has worked is deleting and reinstalling mods (LOTD and Skyland AIO are known to do this). With LOTD being a manual download, the issue is with MO2's install a mod feature. This is something I can't control. You might see an alert pop up saying something is wrong, but it still installed. This is a dirty install. Re-downloading from Nexus usually fixes this, and I am unsure why LOTD and Skyland AIO cause this error, as MO2 only touches the mod after it is downloaded, Kalium does not touch the mods ever. I will keep investigating and find a fix, but I will not make the tool "fix" MO2, as that becomes me managing MO2, and that is a whole other mess. The goal is to get as close to Windows-like modding as possible, and making it act like a Linux MO2 would break a few things the modding community relies on.**
+
+---
+
 ## What is next? 
 
-1.1.0 will have some more features such as: 
+**1.1.0 will have some more features such as:** 
 
 - **Upgrading USVFS to v0.5.7.2**. This feature will be automatic for new MO2 installs, while older MO2 installs will get a button in settings to update any MO2 instance via the prefix chosen. This will be more compatible if you use Wine/Proton 10.20+. This will create a backup as needed.
 - **Better support for multiple drives**. As it stands, it already works with multi-drive support, but "max_memory=" when having to deal with multiple drives can cause issues with some tools. However, 1.0.0 has already proven to work just fine with tools like the Pandora Behaviour Engine Plus.
@@ -110,9 +114,9 @@ WINEPREFIX="$HOME/.steam/steam/steamapps/compatdata/<app_id>/pfx"   winetricks
 
 ### Why run this when vcrun2022 is already installed? 
 
-This targets the `WINEPREFIX` to the prefix to be able to run LOOT, and this guarantees LOOT will run. It does not change how the installation of MO2 already works, as this is run only after LOOT is installed, which is long after the MO2 install happens. Why do this? It Reapplies/registers the runtime into the exact prefix LOOT is going to execute inside. This works across all instances. So, if you have multiple instances, it is not going to say, "Oh, LOOT is here, now. I have to change my `WINEPREFIX` target." The `WINEPREFIX` only registers that target, it does not swap targets.
+This targets the `WINEPREFIX` to the prefix to be able to run LOOT, and this guarantees LOOT will run. It does not change how the installation of MO2 already works, as this is run only after LOOT is installed, which is long after the MO2 install happens. Why do this? It Reapplies/registers the runtime into the exact prefix LOOT is going to execute inside. This works across all instances. So, if you have multiple instances, it is not going to say, "Oh, LOOT is here, now. I have to change my `WINEPREFIX` target." The `WINEPREFIX` only registers that target, it does not swap targets. This means it can see inside of USVFS and the merged data folder, giving it a similar accuracy to Windows, but further testing will be done before I will claim that fully. If you end up having issues, just update USVFS to 0.5.7.2 in Kalium, this fixes bugs from the previous version. This is why the `WINEPREFIX` is so important as it ensures it will launch inside of proton, for it to work and see everything properly. 
 
->**NOTE:** You may have a very small graphical issue. Your window controls to minimize, fullscreen, or exit may cut off the `X` to exit LOOT. Just click full screen (varies on your theme and what distro you run on the design), and then make the window smaller, and it will fix that. Other than that, it should work fine.
+>**NOTE:** You may have a very small graphical issue. Your window controls to minimize, Fullscreen, or exit may cut off the `X` to exit LOOT. Just click full screen (varies on your theme and what distro you run on the design), and then make the window smaller, and it will fix that. Other than that, it should work fine.
 
 Diagnostics:
 
