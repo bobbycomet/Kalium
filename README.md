@@ -43,14 +43,15 @@ Select the folder containing:
 1.1.0 will have some more features such as: 
 
 - **Upgrading USVFS to v0.5.7.2**. This feature will be automatic for new MO2 installs, while older MO2 installs will get a button in settings to update any MO2 instance via the prefix chosen. This will be more compatible if you use Wine/Proton 10.20+. This will create a backup as needed.
-- **Better support for multiple drives**. As it stand, it already works with multi-drive support, but "max_memory=" when having to deal with multiple drives can cause issues with some tools. However, 1.0.0 has already proven to work just fine with tools like the Pandora Behaviour Engine Plus.
+- **Better support for multiple drives**. As it stands, it already works with multi-drive support, but "max_memory=" when having to deal with multiple drives can cause issues with some tools. However, 1.0.0 has already proven to work just fine with tools like the Pandora Behaviour Engine Plus.
 - **Better support for GOG and Heroic**. This should already work pretty well with them, but I will be focusing on more compatibility features.
 - **Integration with the Griffin Updater**. Griffin Updater is another one of my projects, and can update AppImages, which will be useful for Kalium. No need to go to releases every update with this pairing.
-- More CLI commands for those that prefer them.
-- Set VFS max memory to 2 GB
-- Add a MO2 pluging not in the market menu by pasting its link. Needs your API key to work, a link to get it is provided in the app.
+- More CLI commands for those that prefer them. With the AppImage, you will need to do `/path to the AppImage/Kalium-1.1.0-x86_64.AppImage fix-paths -p /path to MO2 instance/instance folder/` 
+- Set VFS max_memory to 2 GB, this helps tools like NEMESIS and larger mod lists
+- Add a MO2 plugin not in the market menu by pasting its link. Needs your API key to work, a link to get it is provided in the app.
 - Marketplace catalog: NMC (#1899) + Sync Plugins (#47325) + Collections
 - Backpatch for Fallout 4, Starfield, Cyberpunk, and The Witcher 3 using app_ids to make sure each game is targeted. You just choose your game, copy the commands, steam console opens, paste the commands, click "apply-already downloaded depots." No need to move files, no need to make backups, all of that is automated, the only thing not automated is copying and pasting the commands.
+- A diagnostics window, and if the auto detect fails, you will get alerted what instance is the issue, you can target the `MO2.exe` location, and it will update, but usually this is from deleting a prefix without deleting the MO2 instance.
 
 Dynamic libraryfolders.vdf parsing:
 
@@ -100,9 +101,17 @@ Once that .bat file has run, you will see this in the ModOrganizer.ini file:
 
 As long as you do not forcibly change the file location, it will work reliably. I already tested this out by changing a location of SKSE to be sure it does not silently overwrite the INI file to use Z:\...
 
-What I did was make a button, and what this runs is it runs: `WINEPREFIX="$HOME/.steam/steam/steamapps/compatdata/<app_id>/pfx"   winetricks -q vcrun2022`
+What I did was make two buttons, one installs Windows `LOOT.exe` and runs a command, which the second button `Wnsure vcrun2022` is a failsafe and runs the same command:
 
-Why run this when vcrun2022 is already installed? This targets the WINEPREFIX to the prefix to be able to run LOOT, and this guarantees LOOT will run. It does not change how the installation of MO2 already works, as this is run only after LOOT is installed, which is long after the MO2 install happens. Why do this? It Reapplies/registers the runtime into the exact prefix LOOT is going to execute inside. This works across all instances. So, if you have multiple instances, it is not going to say, "Oh, LOOT is here, now. I have to change my `WINEPREFIX` target." The `WINEPREFIX` only registers that target, it does not swap targets.
+```
+WINEPREFIX="$HOME/.steam/steam/steamapps/compatdata/<app_id>/pfx"   winetricks -q vcrun2022
+```
+
+### Why run this when vcrun2022 is already installed? 
+
+This targets the `WINEPREFIX` to the prefix to be able to run LOOT, and this guarantees LOOT will run. It does not change how the installation of MO2 already works, as this is run only after LOOT is installed, which is long after the MO2 install happens. Why do this? It Reapplies/registers the runtime into the exact prefix LOOT is going to execute inside. This works across all instances. So, if you have multiple instances, it is not going to say, "Oh, LOOT is here, now. I have to change my `WINEPREFIX` target." The `WINEPREFIX` only registers that target, it does not swap targets.
+
+>**NOTE:** You may have a very small graphical issue. Your window controls to minimize, fullscreen, or exit may cut off the `X` to exit LOOT. Just click full screen (varies on your theme and what distro you run on the design), and then make the window smaller, and it will fix that. Other than that, it should work fine.
 
 Diagnostics:
 
