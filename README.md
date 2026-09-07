@@ -18,6 +18,8 @@ An MO2 environment builder that helps modding Bethesda games with NXM, backpatch
 
 [Screenshots](https://github.com/bobbycomet/Kalium/tree/main/screenshots)
 
+[CLI/Diagnostics/Troubleshooting](https://github.com/bobbycomet/Kalium/wiki/CLI-Diagnostics-Troubleshooting)
+
 ---
 
 ## What if I used NaK before, and have the MO2 and prefix still installed?
