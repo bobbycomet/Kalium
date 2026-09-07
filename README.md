@@ -1,4 +1,4 @@
-# Kalium 1.0.0 Beta
+# Kalium 1.1.0 Beta
 
 **Linux modding helper** for Steam and [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer).
 
@@ -6,11 +6,13 @@ Kalium installs or attaches MO2 as a **non-Steam game** under Proton, prepares t
 
 An MO2 environment builder that helps modding Bethesda games with NXM, backpatching Skyrim, handling prefixes, installing MO2 plugins, reconnecting NXK per prefix, auto-installs instances to non-steam games, and is disconnected from MO2, so the AppImage only handles the environment, not MO2. Based off [NaK](https://github.com/bobbycomet/NaK) but redesigned from the ground up. 
 
-Some limitations on LOOT, use the internal MO2 LOOT until that is patched later. Found a reliable fix, and it will be implemented in 1.1.0.
+>**NOTE:** As this is a Beta, fixes and upgrades will be coming as more testing is done.
+>Tools still in Beta:
+>- Back patcher
+>- LOOT.exe (works as is, but accuracy claims need to be tested further)
+>- GOG and Heroic support
 
-Back patch for Skyrim supports 1.5.97, 1.6.640, 1.6.1130, and 1.6.1170. A back up will automatically be made.
-
-Version 1.0.0 works as is, but as stated, some limitations, but tools like Pandora engine do work, LOOT is the outlier because of the way Proton handles MO2 and the virtual file system (VFS), and prefers Wine to launch. [Documentation](https://github.com/bobbycomet/Kalium/wiki)
+[Documentation](https://github.com/bobbycomet/Kalium/wiki)
 
 [First setup](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup)
 
@@ -42,9 +44,9 @@ Select the folder containing:
 
 ---
 
-## What is next? 
+## What is new? 
 
-**1.1.0 will have some more features such as:** 
+**1.1.0 has more features such as:** 
 
 - **Upgrading USVFS to v0.5.7.2**. This feature will be automatic for new MO2 installs, while older MO2 installs will get a button in settings to update any MO2 instance via the prefix chosen. This will be more compatible if you use Wine/Proton 10.20+. This will create a backup as needed.
 - **Better support for multiple drives**. As it stands, it already works with multi-drive support, but "max_memory=" when having to deal with multiple drives can cause issues with some tools. However, 1.0.0 has already proven to work just fine with tools like the Pandora Behaviour Engine Plus.
@@ -53,7 +55,7 @@ Select the folder containing:
 - More CLI commands for those that prefer them. With the AppImage, you will need to do `/path to the AppImage/Kalium-1.1.0-x86_64.AppImage fix-paths -p /path to MO2 instance/instance folder/` 
 - Set VFS max_memory to 2 GB, this helps tools like NEMESIS and larger mod lists
 - Add a MO2 plugin not in the market menu by pasting its link. Needs your API key to work, a link to get it is provided in the app.
-- Marketplace catalog: NMC (#1899) + Sync Plugins (#47325) + Collections
+- Marketplace catalog: NMC (#1899) + Collections (Sync was removed because the mod owner has it set to manual downloads only)
 - Backpatch for Fallout 4, Starfield, Cyberpunk, and The Witcher 3 using app_ids to make sure each game is targeted. You just choose your game, copy the commands, steam console opens, paste the commands, click "apply-already downloaded depots." No need to move files, no need to make backups, all of that is automated, the only thing not automated is copying and pasting the commands.
 - A diagnostics window, and if the auto detect fails, you will get alerted what instance is the issue, you can target the `MO2.exe` location, and it will update, but usually this is from deleting a prefix without deleting the MO2 instance.
 - Removing the need for dual skse, and only needing one in the root folder for MO2
