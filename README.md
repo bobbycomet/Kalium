@@ -52,6 +52,7 @@ Select the folder containing:
 - Marketplace catalog: NMC (#1899) + Sync Plugins (#47325) + Collections
 - Backpatch for Fallout 4, Starfield, Cyberpunk, and The Witcher 3 using app_ids to make sure each game is targeted. You just choose your game, copy the commands, steam console opens, paste the commands, click "apply-already downloaded depots." No need to move files, no need to make backups, all of that is automated, the only thing not automated is copying and pasting the commands.
 - A diagnostics window, and if the auto detect fails, you will get alerted what instance is the issue, you can target the `MO2.exe` location, and it will update, but usually this is from deleting a prefix without deleting the MO2 instance.
+- Removing the need for dual skse, and only needing one in the root folder for MO2
 
 Dynamic libraryfolders.vdf parsing:
 
