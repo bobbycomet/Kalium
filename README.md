@@ -100,6 +100,10 @@ Once that .bat file has run, you will see this in the ModOrganizer.ini file:
 
 As long as you do not forcibly change the file location, it will work reliably. I already tested this out by changing a location of SKSE to be sure it does not silently overwrite the INI file to use Z:\...
 
+What I did was make a button, and what this runs is it runs: `WINEPREFIX="$HOME/.steam/steam/steamapps/compatdata/<app_id>/pfx"   winetricks -q vcrun2022`
+
+Why run this when vcrun2022 is already installed? This targets the WINEPREFIX to the prefix to be able to run LOOT, and this guarantees LOOT will run. It does not change how the installation of MO2 already works, as this is run only after LOOT is installed, which is long after the MO2 install happens. Why do this? It Reapplies/registers the runtime into the exact prefix LOOT is going to execute inside. This works across all instances. So, if you have multiple instances, it is not going to say, "Oh, LOOT is here, now. I have to change my `WINEPREFIX` target." The `WINEPREFIX` only registers that target, it does not swap targets.
+
 Diagnostics:
 
 ```
