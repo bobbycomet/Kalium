@@ -16,6 +16,10 @@ An MO2 environment builder that helps modding Bethesda games with NXM, backpatch
 
 [First setup](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup)
 
+[What the setup process does](https://github.com/bobbycomet/Kalium/wiki/Installation)
+
+[Supported Games](https://github.com/bobbycomet/Kalium/wiki/Supported-Games)
+
 [Screenshots](https://github.com/bobbycomet/Kalium/tree/main/screenshots)
 
 [CLI/Diagnostics/Troubleshooting](https://github.com/bobbycomet/Kalium/wiki/CLI-Diagnostics-Troubleshooting)
