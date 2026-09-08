@@ -4,7 +4,9 @@
 
 Kalium installs or attaches MO2 as a **non-Steam game** under Proton, prepares the Wine prefix, registers **NXM** links, detects games, supports the **Collections** plugin, and can **backpatch Skyrim SE** via Steam depots.
 
-An MO2 environment builder that helps modding Bethesda games with NXM, backpatching Skyrim, handling prefixes, installing MO2 plugins, reconnecting NXK per prefix, auto-installs instances to non-steam games, and is disconnected from MO2, so the AppImage only handles the environment, not MO2. Based off [NaK](https://github.com/bobbycomet/NaK) but redesigned from the ground up. 
+An MO2 environment builder that helps modding Bethesda games with NXM, backpatching Skyrim, handling prefixes, installing MO2 plugins, reconnecting NXK per prefix, auto-installs instances to non-steam games, and is disconnected from MO2, so the AppImage only handles the environment, not MO2. Based off [NaK](https://github.com/SulfurNitride/NaK) but redesigned from the ground up. 
+
+**Kalium is not affiliated with NaK, Flourine Manager, SulfurNitride, or any of its maintainers. This is an independent project that uses NaK as a starting point for its initial structure. Kalium is independently Maintained, but contributions are welcome.**
 
 >**NOTE:** As this is a Beta, fixes and upgrades will be coming as more testing is done.
 >Tools still in Beta:
