@@ -1,4 +1,4 @@
-# Kalium 1.1.0 Beta
+# Kalium 1.1.1 Beta
 
 **Linux modding helper** for Steam and [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer).
 
