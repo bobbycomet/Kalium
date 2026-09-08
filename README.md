@@ -45,6 +45,18 @@ Some mods (mostly SKSE mods) aren't working correctly on these Proton versions, 
 - LOTD is a manual download, so the problem is with MO2's "install a mod" feature, you may see an install error even though the mod installed anyway (a "dirty install"). Re-downloading from Nexus usually resolves this.
 - Kalium never touches mod files; MO2 only touches a mod after it's downloaded, so this is outside Kalium's control. It's still being investigated, but Kalium won't try to "fix" MO2's behavior, since that would mean taking on MO2 management and pushing it away from Windows-like modding behavior that the community relies on.
 
+| **Kalium manages the environment**             | **Your modding setup remains yours** |
+| ---------------------------------------------- | ------------------------------------ |
+| Proton environment                             | Your mods                            |
+| Wine prefixes                                  | Your load order                      |
+| Steam integration                              | Your MO2 profiles                    |
+| NXM registration                               | Your game INIs                       |
+| MO2 installation                               | MO2's mod installation behavior      |
+| MO2 plugin installation                        |                                      |
+| Supporting tools                               |                                      |
+| Game detection                                 |                                      |
+| MO2 INI configuration *(paths, default theme, VFS max memory, etc)* |                                      |
+
 ---
 
 ## What's new in 1.1.x
