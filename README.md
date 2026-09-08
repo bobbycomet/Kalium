@@ -2,6 +2,8 @@
 
 **Linux modding helper** for Steam and [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer).
 
+>**1.1.0** has a bug in which it is setting incorrect paths for games. A fix is being worked on.
+
 Kalium installs or attaches MO2 as a **non-Steam game** under Proton, prepares the Wine prefix, registers **NXM** links, detects games, supports the **Collections** plugin, and can **backpatch Skyrim SE** via Steam depots.
 
 It's an MO2 environment builder for modding Bethesda games, handling NXM links, Skyrim backpatching, Wine prefixes, MO2 plugin installs, and per-prefix NXM reconnection, with auto-install of instances as non-Steam games. Kalium is disconnected from MO2 itself: the AppImage only manages the environment, not MO2. It's based on [NaK](https://github.com/SulfurNitride/NaK) but redesigned from the ground up.
