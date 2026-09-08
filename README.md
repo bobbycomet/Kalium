@@ -6,7 +6,7 @@ Kalium prepares and maintains the environment required to run the Windows versio
 
 It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually.
 
-> **Kalium prepares the environment. MO2 manages the mods.**
+> **The 1.1.1 fix is for newer instances. Existing instances will be fixed in 1.1.1.1 [Check Versioning Philosophy](https://github.com/bobbycomet/Kalium/wiki/Versioning-Philosophy) to understand why versions are numbered how they are.**
 
 ---
 
