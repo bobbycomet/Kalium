@@ -30,7 +30,7 @@ Kalium configures the Proton/Steam environment without downloading another copy 
 
 ---
 
-## Known issue: mod installs on Proton 1.7.99/1.7.104
+## Known issue: mod installs on Skyrim 1.7.99/1.7.104
 
 Some mods (mostly SKSE mods) aren't working correctly on these Proton versions, and a few mods have install issues that are slowing down testing. **This is an NXM/mod issue, not a Kalium issue.**
 
