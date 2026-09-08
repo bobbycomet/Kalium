@@ -159,6 +159,7 @@ A complete migration guide is available in the [Wiki](https://github.com/bobbyco
 ## Documentation
 
 * **[Wiki](https://github.com/bobbycomet/Kalium/wiki)** — Complete documentation
+* **[Distro/kernel Compatibility](https://github.com/bobbycomet/Kalium/wiki/Kalium-Compatibility)** — See if your set up is ready to go
 * **[First Setup](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup)** — Set up your first MO2 instance
 * **[Installation](https://github.com/bobbycomet/Kalium/wiki/Installation)** — Detailed environment setup
 * **[Supported Games](https://github.com/bobbycomet/Kalium/wiki/Supported-Games)** — Game compatibility
