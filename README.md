@@ -22,14 +22,15 @@ Kalium can:
 * Support games installed across multiple drives
 * Configure secondary-drive access through `STEAM_COMPAT_MOUNTS`
 * Install MO2 plugins
-* Update and configure USVFS
-* Configure VFS memory for large modlists
+* Update and configure USVFS to 0.5.7.2
+* Configure VFS memory for large modlists and tools like NEMESIS and Pandora
 * Install and integrate LOOT
 * Provide Winetricks and registry tools
 * Provide diagnostics and repair tools
 * Provide Steam depot backpatching for supported games
 * Support CLI-based setup and diagnostics
 * Provide ongoing GOG and Heroic compatibility work
+* Install standalone Windows LOOT with the WINEPREFIX registration per instance
 
 Kalium is **not a replacement for MO2** and does not attempt to become another mod manager.
 
