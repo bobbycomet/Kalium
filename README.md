@@ -2,7 +2,9 @@
 
 **Linux modding helper** for Steam and [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer).
 
->**1.1.0** has a bug in which it is setting incorrect paths for games. A fix is being worked on.
+> **NOTE:** The 1.1.1 fix currently applies to **new MO2 instances**. A migration/fix for existing instances is planned for a future update.
+>
+> If you know what you are doing, you can manually move your existing mods to the new instance, just as you would when migrating an MO2 instance on Windows. **Make sure you understand how your MO2 instance is configured before doing this manually.**
 
 Kalium installs or attaches MO2 as a **non-Steam game** under Proton, prepares the Wine prefix, registers **NXM** links, detects games, supports the **Collections** plugin, and can **backpatch Skyrim SE** via Steam depots.
 
