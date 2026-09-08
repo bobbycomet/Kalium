@@ -12,6 +12,7 @@ It's an MO2 environment builder for modding Bethesda games, handling NXM links, 
 > - Backpatcher
 > - LOOT.exe (works as-is, but accuracy claims need further testing)
 > - GOG and Heroic support
+> - If you have issues with a Proton version, try GE Proton Latest, Proton 10+ is supported, but that does not mean your are locked to that choice.
 
 **Docs:** [Wiki](https://github.com/bobbycomet/Kalium/wiki) · [First setup](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup) · [What setup does](https://github.com/bobbycomet/Kalium/wiki/Installation) · [Supported games](https://github.com/bobbycomet/Kalium/wiki/Supported-Games) · [Screenshots](https://github.com/bobbycomet/Kalium/tree/main/screenshots) · [CLI / Diagnostics / Troubleshooting](https://github.com/bobbycomet/Kalium/wiki/CLI-Diagnostics-Troubleshooting)
 
