@@ -47,7 +47,7 @@ Some mods (mostly SKSE mods) aren't working correctly on these Proton versions, 
 
 ---
 
-## What's new in 1.1.0
+## What's new in 1.1.x
 
 - **USVFS upgraded to v0.5.7.2.** Automatic for new MO2 installs; existing installs get an update button in Settings (per prefix). Best compatibility with Wine/Proton 10.20+. Backs up automatically as needed.
 - **Better multi-drive support.** Multi-drive setups already work, but `max_memory=` can cause issues with some tools across multiple drives. 1.0.0 already works fine with tools like Pandora Behaviour Engine Plus.
