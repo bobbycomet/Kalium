@@ -16,6 +16,8 @@ It's an MO2 environment builder for modding Bethesda games, handling NXM links, 
 
 **Docs:** [Wiki](https://github.com/bobbycomet/Kalium/wiki) · [First setup](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup) · [What setup does](https://github.com/bobbycomet/Kalium/wiki/Installation) · [Supported games](https://github.com/bobbycomet/Kalium/wiki/Supported-Games) · [Screenshots](https://github.com/bobbycomet/Kalium/tree/main/screenshots) · [CLI / Diagnostics / Troubleshooting](https://github.com/bobbycomet/Kalium/wiki/CLI-Diagnostics-Troubleshooting)
 
+**Reporting bugs and issue:** [Discord](https://discord.gg/6VgwWJDD9A) · [Bug template](https://github.com/bobbycomet/Kalium/blob/main/bug_reports.md) · [Issues template](https://github.com/bobbycomet/Kalium/blob/main/issues_report.md)
+
 ---
 
 ## Migrating from NaK
