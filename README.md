@@ -1,6 +1,6 @@
 # Kalium 1.1.1 Beta
 
-**Linux modding helper** for Steam and [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer).
+Kalium is a Linux environment manager for running [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer) and Windows modding tools through Steam Proton.
 
 > **NOTE:** The 1.1.1 fix currently applies to **new MO2 instances**. A migration/fix for existing instances is planned for a future update.
 >
