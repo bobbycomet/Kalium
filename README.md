@@ -8,7 +8,7 @@ It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuratio
 
 > **Beta is only because some features are in beta, not the full tool. I only keep the Beta tag for this reason. Kalium has a lot of features, and to make them all work reliably is my goal. [Check Beta Status](#Beta-Status)**
 >
-> Backpatching does work, However, it will remain in Beta status, as it will always carry a **risk**, no matter how safe I make it. No tool can promise 100% safety, and if they are, they are not telling the full story. Backpatching is made to stay as safe as possible, but **always** check the version, the [WIKI](https://github.com/bobbycomet/Kalium/wiki/Backpatching#frequently-asked-questions) has tips on how to be safe, and how to check the version number was backpatched.
+> Backpatching does work, However, it will remain in Beta status, as it will always carry a **risk**, no matter how safe I make it. No tool can promise 100% safety, and if they are, they are not telling the full story. Backpatching is made to stay as safe as possible, but **always** check the version, the [WIKI](https://github.com/bobbycomet/Kalium/wiki/Backpatching) has tips on how to be safe, and how to [check the version number](https://github.com/bobbycomet/Kalium/wiki/Backpatching#frequently-asked-questions) the game was backpatched to.
 >
 > **Existing instances migration are fixed in 1.1.1.1, back up files for safety before migration. [Check Versioning Philosophy](https://github.com/bobbycomet/Kalium/wiki/Versioning-Philosophy) to understand why versions are numbered how they are.**
 
