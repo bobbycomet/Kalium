@@ -70,7 +70,7 @@ Kalium is currently **Beta software**. Compatibility work is ongoing.
 
 Areas still receiving testing include:
 
-* Backpatching
+* [Backpatching](https://github.com/bobbycomet/Kalium/wiki/Backpatching)
 * GOG support
 * Heroic support
 * Proton-version compatibility
