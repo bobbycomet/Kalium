@@ -33,6 +33,7 @@ Kalium can:
 * Support CLI-based setup and diagnostics
 * Provide ongoing GOG and Heroic compatibility work
 * Install standalone Windows LOOT with the WINEPREFIX registration per instance
+* Install [Stylesheets](https://github.com/bobbycomet/Kalium/blob/main/Screenshots/Fluency_dark.png) from nexus just like Windows, drag and drop files in the stylesheets folder, and they just work 
 
 Kalium is **not a replacement for MO2** and does not attempt to become another mod manager.
 
