@@ -6,6 +6,8 @@ Kalium prepares and maintains the environment required to run the Windows versio
 
 It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually.
 
+> **Beta is only because some features are in beta, not the full tool. I only keep the Beta tag for this reason. Kalium has a lot of features, and to make them all work reliably is my goal. [Check Beta Status](#Beta-Status)
+>
 > **Existing instances migration are fixed in 1.1.1.1, back up files for safety before migration. [Check Versioning Philosophy](https://github.com/bobbycomet/Kalium/wiki/Versioning-Philosophy) to understand why versions are numbered how they are.**
 
 ---
