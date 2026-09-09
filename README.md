@@ -131,21 +131,6 @@ The setup wizard handles:
 
 ---
 
-## Known Mod Installation Issues
-
-Some mods can currently have installation or runtime issues on Skyrim 1.7.99/1.7.104 environments.
-
-Known examples include:
-
-* **Legacy of the Dragonborn (LOTD)**
-* **Skyland AIO**
-
-These appear to involve MO2/NXM behavior rather than Kalium itself. Re-downloading an affected mod from Nexus can resolve some installation problems.
-
-Kalium does not modify downloaded mod files or attempt to replace MO2's mod installation behavior.
-
----
-
 ## Migrating from NaK
 
 Kalium can configure an existing MO2 installation without downloading another copy of MO2.
