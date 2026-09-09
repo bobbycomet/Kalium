@@ -1,4 +1,4 @@
-# Kalium 1.1.2
+# Kalium 1.1.1.2
 
 Kalium 1.1.1.2 is now out of Beta. Feautures marked as Beta are just precautionary until more users have tested them.
 
