@@ -8,6 +8,8 @@ It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuratio
 
 > **Beta is only because some features are in beta, not the full tool. I only keep the Beta tag for this reason. Kalium has a lot of features, and to make them all work reliably is my goal. [Check Beta Status](#Beta-Status)**
 >
+> Backpatching does work, However, it will remain in Beta status, as it will always carry a **risk**, no matter how safe I make it. No tool can promise 100% safety, and if they are, they are not telling the full story. Backpatching is made to stay as safe as possible, but **always** check the version, the wiki has tips on how to be safe, and how to check the version number was backpatched.
+>
 > **Existing instances migration are fixed in 1.1.1.1, back up files for safety before migration. [Check Versioning Philosophy](https://github.com/bobbycomet/Kalium/wiki/Versioning-Philosophy) to understand why versions are numbered how they are.**
 
 ---
@@ -33,7 +35,10 @@ Kalium can:
 * Support CLI-based setup and diagnostics
 * Provide ongoing GOG and Heroic compatibility work
 * Install standalone Windows LOOT with the WINEPREFIX registration per instance
-* Install [Stylesheets](https://github.com/bobbycomet/Kalium/blob/main/Screenshots/Fluency_dark.png) from nexus just like Windows, drag and drop files in the stylesheets folder, and they just work 
+* Install [Stylesheets](https://github.com/bobbycomet/Kalium/blob/main/Screenshots/Fluency_dark.png) from nexus just like Windows, drag and drop files in the stylesheets folder, and they just work
+* **Collections** are supported via the MO2 plugin you can choose to install after MO2 install (Nexus premium is best for this feature, as non-premium members will open as many tabs as there are mods in the collection. This is a Nexus limitation, not Kalium's).
+
+Once Beta status has leveled out, and everything works as it should, I will look into Wabbajack support.
 
 Kalium is **not a replacement for MO2** and does not attempt to become another mod manager.
 
@@ -62,6 +67,13 @@ Kalium is **not a replacement for MO2** and does not attempt to become another m
 Kalium may modify specific MO2 settings required for the environment, such as paths, managed-game information, USVFS settings, theme, and registered tools.
 
 It does **not** manage your mods, load order, profiles, or game INIs.
+
+| Modded method | Launch Option |
+| ------------- | ------------- |
+| **Play with MO2 mods (no SKSE)** | Launch the game `.exe` from inside MO2 | 
+| **Play with SKSE** | Launch `SKSE` from inside MO2 |
+
+> **Note:** When a Bethesda game updates versions, Kalium only sets up the environment. So, if the mod is for an older game version, Kalium will not magically make it work because MO2's job is to handle the mods. If the mod and game version are not compatible (e.g., mod is for 1.6.1170 Skyrim SE, but current version you play is 1.7.99+), then the mod will simply not work. It is up to you to check versions of your game and mod needs. No tool can will replace that.
 
 ---
 
