@@ -166,6 +166,7 @@ A complete migration guide is available in the [Wiki](https://github.com/bobbyco
 * **[Supported Games](https://github.com/bobbycomet/Kalium/wiki/Supported-Games)** — Game compatibility
 * **[CLI / Diagnostics / Troubleshooting](https://github.com/bobbycomet/Kalium/wiki/CLI-Diagnostics-Troubleshooting)** — Advanced users and troubleshooting
 * **[Screenshots](https://github.com/bobbycomet/Kalium/tree/main/screenshots)** — GUI and feature screenshots
+* **[Standalone LOOT compatibility and accuracy](https://github.com/bobbycomet/Kalium/wiki/FAQs#how-accurate-is-the-standalone-loot-when-run-in-the-environment)
 
 ---
 
