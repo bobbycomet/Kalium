@@ -74,7 +74,8 @@ Areas still receiving testing include:
 * GOG support
 * Heroic support
 * Proton-version compatibility
-* Existing MO2 instance migration
+
+[Check Launcher Compatibility for GOG, Heroic, Flatpak Steam, and Snap Steam support](https://github.com/bobbycomet/Kalium/wiki/Launcher-Compatibility)
 
 If a Proton version gives you trouble, try **GE-Proton Latest**. Kalium supports Proton 10+, but you are **not locked to Proton 10+**. Different games and tools may work better with different Proton versions.
 
