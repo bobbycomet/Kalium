@@ -1,4 +1,6 @@
-# Kalium 1.1.1 Beta
+# Kalium 1.1.2
+
+Kalium 1.1.1.2 is now out of Beta. Feautures marked as Beta are just precautionary until more users have tested them.
 
 **Linux modding environment manager for Steam, Proton, and Mod Organizer 2.**
 
@@ -26,14 +28,14 @@ Kalium can:
 * Support games installed across multiple drives
 * Configure secondary-drive access through `STEAM_COMPAT_MOUNTS`
 * Install MO2 plugins
-* Update and configure USVFS to 0.5.7.2
+* Update and configure USVFS to 0.5.7.2 [Check Beta Status](#Beta-Status)
 * Configure VFS memory for large modlists and tools like NEMESIS and Pandora
 * Install and integrate LOOT
 * Provide Winetricks and registry tools
 * Provide diagnostics and repair tools
 * Provide Steam depot backpatching for supported games
 * Support CLI-based setup and diagnostics
-* Provide ongoing GOG and Heroic compatibility work
+* Provide ongoing GOG and Heroic compatibility work [Check Beta Status](#Beta-Status)
 * Install standalone Windows LOOT with the WINEPREFIX registration per instance
 * Install [Stylesheets](https://github.com/bobbycomet/Kalium/blob/main/Screenshots/Fluency_dark.png) from nexus just like Windows, drag and drop files in the stylesheets folder, and they just work
 * **Collections** are supported via the MO2 plugin you can choose to install after MO2 install (Nexus premium is best for this feature, as non-premium members will open as many tabs as there are mods in the collection. This is a Nexus limitation, not Kalium's).
@@ -87,6 +89,7 @@ Areas still receiving testing include:
 * GOG support
 * Heroic support
 * Proton-version compatibility
+* USVFS 0.5.7.2
 
 [Check Launcher Compatibility for GOG, Heroic, Flatpak Steam, and Snap Steam support](https://github.com/bobbycomet/Kalium/wiki/Launcher-Compatibility)
 
