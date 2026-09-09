@@ -71,7 +71,6 @@ Kalium is currently **Beta software**. Compatibility work is ongoing.
 Areas still receiving testing include:
 
 * Backpatching
-* LOOT compatibility and accuracy
 * GOG support
 * Heroic support
 * Proton-version compatibility
