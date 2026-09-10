@@ -14,7 +14,7 @@ It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuratio
 >
 > **Existing instances migration are fixed in 1.1.1.1, back up files for safety before migration. [Check Versioning Philosophy](https://github.com/bobbycomet/Kalium/wiki/Versioning-Philosophy) to understand why versions are numbered how they are.**
 >
-> !Important: One instance per game. This is a limitation of Wine.
+> **Important!** One instance per game. This is a limitation of Wine.
 
 ---
 
