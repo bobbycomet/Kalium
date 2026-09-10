@@ -6,6 +6,8 @@ Kalium 1.1.1.2 is now out of Beta. Feautures marked as Beta are just precautiona
 
 Kalium prepares and maintains the environment required to run the Windows version of [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer) on Linux through Steam + Proton.
 
+[Setup Video Guide](https://youtu.be/Iy2E3C19CE4)
+
 It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually.
 
 > **Beta is only because some features are in beta, not the full tool. I only keep the Beta tag for this reason. Kalium has a lot of features, and to make them all work reliably is my goal. [Check Beta Status](#Beta-Status)**
