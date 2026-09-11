@@ -1,6 +1,6 @@
-# Kalium 1.1.1.2
+# Kalium 1.1.1.3
 
-Kalium 1.1.1.2 is now out of Beta. Feautures marked as Beta are just precautionary until more users have tested them.
+Kalium 1.1.1.3 Skyrim SE/AE backpatcher was fixed.
 
 **Linux modding environment manager for Steam, Proton, and Mod Organizer 2. Open the app, install bew/migrate instance, name the instance (non-Steam game name), choose where to save the folder, choose game and exe location, choose proton, and install. The rest are just optional choices.**
 
