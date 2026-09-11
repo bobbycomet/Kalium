@@ -2,7 +2,7 @@
 
 Kalium 1.1.1.2 is now out of Beta. Feautures marked as Beta are just precautionary until more users have tested them.
 
-**Linux modding environment manager for Steam, Proton, and Mod Organizer 2.**
+**Linux modding environment manager for Steam, Proton, and Mod Organizer 2. Open the app, install bew/migrate instance, name the instance (non-Steam game name), choose where to save the folder, choose game and exe location, choose proton, and install. The rest are just optional choices.**
 
 Kalium prepares and maintains the environment required to run the Windows version of [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer) on Linux through Steam + Proton.
 
