@@ -10,7 +10,7 @@ Kalium prepares and maintains the environment required to run the Windows versio
 
 It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually. 
 
-> Backpatching does work, However, it will remain in Beta status, as it will always carry a **risk**, no matter how safe I make it. No tool can promise 100% safety, and if they are, they are not telling the full story. Backpatching is made to stay as safe as possible, but **always** check the version, the [WIKI](https://github.com/bobbycomet/Kalium/wiki/Backpatching) has tips on how to be safe, and how to [check the version number](https://github.com/bobbycomet/Kalium/wiki/Backpatching#frequently-asked-questions) the game was backpatched to. If you have issues with the backpatcher, it is possibly the proton version you are using. I did it manually to check for issues, and the same issues with the backpatcher automation appears. Skyrim just crashes. I will keep checking for fixes. 
+> Removed Backpatch from the UI. The issue is the Backpatch worked, but Steam, does not like when Linux tries to down grade a game. This is a Steam, Proton issue, nothing I do will fix that, so it will stay experimental in CLI.
 >
 > **Existing instances migration are fixed in 1.1.1.1, back up files for safety before migration. [Check Versioning Philosophy](https://github.com/bobbycomet/Kalium/wiki/Versioning-Philosophy) to understand why versions are numbered how they are.**
 >
@@ -48,6 +48,23 @@ Kalium is **not a replacement for MO2** and does not attempt to become another m
 
 ---
 
+### First setup
+
+The setup wizard handles:
+
+1. MO2 selection
+2. Game selection
+3. Proton selection
+4. Steam shortcut creation
+5. Proton/Wine environment configuration
+6. MO2 environment configuration
+7. Kalium Tools creation
+8. Instance registration
+
+**[Read the First Setup Guide →](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup)**
+
+---
+
 ## Kalium vs. MO2
 
 | **Kalium manages**       | **MO2 manages**               |
@@ -64,7 +81,7 @@ Kalium is **not a replacement for MO2** and does not attempt to become another m
 | MO2 environment settings |                               |
 | USVFS configuration      |                               |
 | LOOT integration         |                               |
-| Backpatching support     |                               |
+| Backpatching support Experimental    |                               |
 | Diagnostics and repair   |                               |
 | MO2 INI *(paths, default theme, VFS max memory, etc)* |                      |
 
@@ -81,14 +98,6 @@ It does **not** manage your mods, load order, profiles, or game INIs.
 
 ---
 
-## Beta Status
-
-Kalium is currently **Beta software**. Compatibility work is ongoing.
-
-Areas still receiving testing include:
-
-* [Backpatching](https://github.com/bobbycomet/Kalium/wiki/Backpatching) Works, but carries risks to the game, not game saves, or anything serious; you may need to verify files or reinstall the game in the worst cases.
-
 [Check Launcher Compatibility for GOG, Heroic, Flatpak Steam, and Snap Steam support](https://github.com/bobbycomet/Kalium/wiki/Launcher-Compatibility)
 
 If a Proton version gives you trouble, try **GE-Proton Latest**. Kalium supports Proton 10+, but you are **not locked to Proton 10+**. Different games and tools may work better with different Proton versions.
@@ -99,7 +108,7 @@ If a Proton version gives you trouble, try **GE-Proton Latest**. Kalium supports
 
 See the [Supported Games](https://github.com/bobbycomet/Kalium/wiki/Supported-Games) page for the current compatibility list.
 
-Backpatching is currently available for selected versions of:
+Experimental Backpatching is currently available for selected versions of:
 
 * Skyrim Special Edition
 * Fallout 4
@@ -107,7 +116,7 @@ Backpatching is currently available for selected versions of:
 * Cyberpunk 2077
 * The Witcher 3
 
-Support and compatibility vary by game and Proton version.
+Support and compatibility vary by game and Proton version. This may cause the game to crash, and you will have to validate files to get it working again, which means back to the newest release. I tried the manual way as well, same result.
 
 ---
 
