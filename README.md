@@ -10,13 +10,11 @@ Kalium prepares and maintains the environment required to run the Windows versio
 
 It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually.
 
-> **Beta is only because some features are in beta, not the full tool. I only keep the Beta tag for this reason. Kalium has a lot of features, and to make them all work reliably is my goal. [Check Beta Status](#Beta-Status)**
->
 > Backpatching does work, However, it will remain in Beta status, as it will always carry a **risk**, no matter how safe I make it. No tool can promise 100% safety, and if they are, they are not telling the full story. Backpatching is made to stay as safe as possible, but **always** check the version, the [WIKI](https://github.com/bobbycomet/Kalium/wiki/Backpatching) has tips on how to be safe, and how to [check the version number](https://github.com/bobbycomet/Kalium/wiki/Backpatching#frequently-asked-questions) the game was backpatched to.
 >
 > **Existing instances migration are fixed in 1.1.1.1, back up files for safety before migration. [Check Versioning Philosophy](https://github.com/bobbycomet/Kalium/wiki/Versioning-Philosophy) to understand why versions are numbered how they are.**
 >
-> **Important!** One instance per game. This is a limitation of Wine.
+> Confirmed that multiple instances for a game can be made and ran in the latest update. Previous 1.1.1. versions were locked to one instance. The new 1.1.1.2 allows this, but mods and game versions are important to double check.
 
 ---
 
@@ -90,10 +88,6 @@ Kalium is currently **Beta software**. Compatibility work is ongoing.
 Areas still receiving testing include:
 
 * [Backpatching](https://github.com/bobbycomet/Kalium/wiki/Backpatching)
-* GOG support
-* Heroic support
-* Proton-version compatibility
-* USVFS 0.5.7.2
 
 [Check Launcher Compatibility for GOG, Heroic, Flatpak Steam, and Snap Steam support](https://github.com/bobbycomet/Kalium/wiki/Launcher-Compatibility)
 
