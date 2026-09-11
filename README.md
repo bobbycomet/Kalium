@@ -8,9 +8,9 @@ Kalium prepares and maintains the environment required to run the Windows versio
 
 [Setup Video Guide](https://youtu.be/Iy2E3C19CE4)
 
-It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually.
+It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually. 
 
-> Backpatching does work, However, it will remain in Beta status, as it will always carry a **risk**, no matter how safe I make it. No tool can promise 100% safety, and if they are, they are not telling the full story. Backpatching is made to stay as safe as possible, but **always** check the version, the [WIKI](https://github.com/bobbycomet/Kalium/wiki/Backpatching) has tips on how to be safe, and how to [check the version number](https://github.com/bobbycomet/Kalium/wiki/Backpatching#frequently-asked-questions) the game was backpatched to.
+> Backpatching does work, However, it will remain in Beta status, as it will always carry a **risk**, no matter how safe I make it. No tool can promise 100% safety, and if they are, they are not telling the full story. Backpatching is made to stay as safe as possible, but **always** check the version, the [WIKI](https://github.com/bobbycomet/Kalium/wiki/Backpatching) has tips on how to be safe, and how to [check the version number](https://github.com/bobbycomet/Kalium/wiki/Backpatching#frequently-asked-questions) the game was backpatched to. If you have issues with the backpatcher, it is possibly the proton version you are using. I did it manually to check for issues, and the same issues with the backpatcher automation appears. Skyrim just crashes. I will keep checking for fixes. 
 >
 > **Existing instances migration are fixed in 1.1.1.1, back up files for safety before migration. [Check Versioning Philosophy](https://github.com/bobbycomet/Kalium/wiki/Versioning-Philosophy) to understand why versions are numbered how they are.**
 >
