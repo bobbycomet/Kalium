@@ -87,7 +87,7 @@ Kalium is currently **Beta software**. Compatibility work is ongoing.
 
 Areas still receiving testing include:
 
-* [Backpatching](https://github.com/bobbycomet/Kalium/wiki/Backpatching)
+* [Backpatching](https://github.com/bobbycomet/Kalium/wiki/Backpatching) Works, but carries risks to the game, not game saves, or anything serious; you may need to verify files or reinstall the game in the worst cases.
 
 [Check Launcher Compatibility for GOG, Heroic, Flatpak Steam, and Snap Steam support](https://github.com/bobbycomet/Kalium/wiki/Launcher-Compatibility)
 
