@@ -14,7 +14,7 @@ It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuratio
 >
 > **Existing instances migration are fixed in 1.1.1.1, back up files for safety before migration. [Check Versioning Philosophy](https://github.com/bobbycomet/Kalium/wiki/Versioning-Philosophy) to understand why versions are numbered how they are.**
 >
-> Confirmed that multiple instances for a game can be made and ran in the latest update. Previous 1.1.1. versions were locked to one instance. The new 1.1.1.2 allows this, but mods and game versions are important to double check.
+> Confirmed that multiple instances for a game can be made and ran in the latest update. Previous 1.1.1. versions were locked to one instance. 1.1.1.2+ allows this, but mods and game versions are important to double check.
 
 ---
 
