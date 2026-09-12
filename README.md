@@ -122,6 +122,8 @@ Support and compatibility vary by game and Proton version. This may cause the ga
 
 ## Installation
 
+1.2.0 now has tar and zip files for you to build the AppImage yourself, if the AppImage built does not work on your machine (GLIBC version is different for you, or similar issues). Just run `./build-appimage.sh` in tour terminal in the same location as the Kalium folder.
+
 Download the latest AppImage from [Releases](https://github.com/bobbycomet/Kalium/releases).
 
 ```bash
