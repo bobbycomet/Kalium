@@ -2,11 +2,13 @@
 
 **Linux modding environment manager for Steam, Proton, and Mod Organizer 2.**
 
+Just came from Windows and want to mod your games the same way as you did there? Kalium makes that happen.
+
 Kalium prepares and maintains the environment required to run the Windows version of [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer) on Linux through Steam + Proton.
 
 Open Kalium, install or migrate an instance, name the instance (this becomes the non-steam game name for MO2), choose where to save it, select the game and executable location, choose Proton, and install. The remaining choices are optional.
 
-Kalium handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually. Just came from Windows and want to mod your games the same way as you did there? Kalium makes that happen.
+Kalium handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually. 
 
 [Setup Video Guide](https://youtu.be/Iy2E3C19CE4)
 
