@@ -47,6 +47,10 @@ Skyrim SE/AE backpatching has been tested and is working.
 
 Other supported games remain experimental and may have different compatibility results.
 
+[A working SKSE mod list for 1.7.104](https://github.com/bobbycomet/Kalium/wiki/This-is-the-mod-list-I-am-running-under-1.7.104-currently)
+
+[Troubleshooting Skyrim SE/AE](https://github.com/bobbycomet/Kalium/wiki/Troubleshooting-Skyrim-SE-AE-mods-not-loading-from-MO2)
+
 ---
 
 ## What Kalium Does
