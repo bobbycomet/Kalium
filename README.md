@@ -1,6 +1,8 @@
-# Kalium 1.2.0
+# Kalium 1.2.1
 
-Kalium 1.2.0 Skyrim SE/AE introduces the MO2 repair. Sometimes a plugin hangs or gets corrupted causing MO2 not to launch, this preserves saves, mods, downloads, and more. Tested on my own Skyrim SE/AE saves, and it does work. Backups are recommended, but not required, as this just targets the MO2 related files to be repaired. I had no issues without adding the backups back in, but backup for safety.
+Kalium 1.2.x+ Skyrim SE/AE introduces the MO2 repair. Sometimes a plugin hangs or gets corrupted causing MO2 not to launch, this preserves saves, mods, downloads, and more. Tested on my own Skyrim SE/AE saves, and it does work. Backups are recommended, but not required, as this just targets the MO2 related files to be repaired. I had no issues without adding the backups back in, but backup for safety.
+
+Backpatch is restored on 1.2.1+ to the UI. It now will create a .bak for ContentCatalog.txt, which was a missing step to the backpatch before. Tested and working on Skyrim SE/AE.
 
 **Linux modding environment manager for Steam, Proton, and Mod Organizer 2. Open the app, install new/migrate instance, name the instance (non-Steam game name), choose where to save the folder, choose game and exe location, choose proton, and install. The rest are just optional choices.**
 
