@@ -1,22 +1,49 @@
 # Kalium 1.2.1
 
-Kalium 1.2.x+ Skyrim SE/AE introduces the MO2 repair. Sometimes a plugin hangs or gets corrupted causing MO2 not to launch, this preserves saves, mods, downloads, and more. Tested on my own Skyrim SE/AE saves, and it does work. Backups are recommended, but not required, as this just targets the MO2 related files to be repaired. I had no issues without adding the backups back in, but backup for safety.
-
-Backpatch is restored on 1.2.1+ to the UI. It now will create a .bak for ContentCatalog.txt, which was a missing step to the backpatch before. Tested and working on Skyrim SE/AE.
-
-**Linux modding environment manager for Steam, Proton, and Mod Organizer 2. Open the app, install new/migrate instance, name the instance (non-Steam game name), choose where to save the folder, choose game and exe location, choose proton, and install. The rest are just optional choices.**
+**Linux modding environment manager for Steam, Proton, and Mod Organizer 2.**
 
 Kalium prepares and maintains the environment required to run the Windows version of [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer) on Linux through Steam + Proton.
 
+Open Kalium, install or migrate an instance, name the instance (this becomes the non-steam game name for MO2), choose where to save it, select the game and executable location, choose Proton, and install. The remaining choices are optional.
+
+Kalium handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually.
+
 [Setup Video Guide](https://youtu.be/Iy2E3C19CE4)
 
-It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuration that normally has to be assembled manually. 
+---
 
-> Removed Backpatch from the UI. The issue is the Backpatch worked, but Steam, does not like when Linux tries to down grade a game. This is a Steam, Proton issue, nothing I do will fix that, so it will stay experimental in CLI.
->
-> **Existing instances migration are fixed in 1.1.1.1, back up files for safety before migration. [Check Versioning Philosophy](https://github.com/bobbycomet/Kalium/wiki/Versioning-Philosophy) to understand why versions are numbered how they are.**
->
-> Confirmed that multiple instances for a game can be made and ran in the latest update. Previous 1.1.1. versions were locked to one instance. 1.1.1.2+ allows this, but mods and game versions are important to double check.
+## What's New in 1.2.x
+
+### MO2 Repair
+
+Kalium 1.2.x introduces **MO2 Repair**.
+
+Sometimes an MO2 plugin, application file, or supporting component can become corrupted or fail in a way that prevents MO2 from launching.
+
+MO2 Repair targets the MO2-related files that need to be repaired without rebuilding the entire instance.
+
+This helps preserve:
+
+* Saves
+* Mods
+* Downloads
+* Profiles
+* Overwrite files
+* Other user data
+
+Backups are recommended, but not required. The repair process is designed to target MO2-related files rather than your mod data.
+
+MO2 Repair has been tested on my own Skyrim SE/AE saves and is working as expected.
+
+### Backpatching
+
+Backpatching is restored to the UI in 1.2.1.
+
+Kalium now creates a `.bak` backup of `ContentCatalog.txt` before applying the backpatch. This was a required step that was missing from the previous implementation.
+
+Skyrim SE/AE backpatching has been tested and is working.
+
+Other supported games remain experimental and may have different compatibility results.
 
 ---
 
@@ -25,8 +52,8 @@ It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuratio
 Kalium can:
 
 * Install or attach an existing MO2 installation
-* MO2 Repair
-* Backpatch game versions, Skyrim SE/AE confirmed working, the other games are in Beta for backpatching
+* Repair an existing MO2 installation
+* Backpatch supported game versions
 * Configure Proton and Wine prefixes per MO2 instance
 * Register MO2 as a Steam non-Steam game
 * Register and reconnect Nexus Mods **NXM** links
@@ -34,25 +61,30 @@ Kalium can:
 * Support games installed across multiple drives
 * Configure secondary-drive access through `STEAM_COMPAT_MOUNTS`
 * Install MO2 plugins
-* Update and configure USVFS to 0.5.7.2 [Check Beta Status](#Beta-Status)
-* Configure VFS memory for large modlists and tools like NEMESIS and Pandora
+* Update and configure USVFS 0.5.7.2
+* Configure VFS memory for large modlists and tools such as NEMESIS and Pandora
 * Install and integrate LOOT
 * Provide Winetricks and registry tools
 * Provide diagnostics and repair tools
-* Provide Steam depot backpatching for supported games
+* Support Steam depot backpatching for supported games
 * Support CLI-based setup and diagnostics
-* Provide GOG, Flatpak Steam, Snap Steam, and Epic support
-* Install standalone Windows LOOT with the WINEPREFIX registration per instance
-* Install [Stylesheets](https://github.com/bobbycomet/Kalium/blob/main/Screenshots/Fluency_dark.png) from nexus just like Windows, drag and drop files in the stylesheets folder, and they just work
-* **Collections** are supported via the MO2 plugin you can choose to install after MO2 install (Nexus premium is best for this feature, as non-premium members will open as many tabs as there are mods in the collection. This is a Nexus limitation, not Kalium's).
+* Provide GOG, Heroic, Flatpak Steam, Snap Steam, and Epic support
+* Install standalone Windows LOOT with WINEPREFIX registration per instance
+* Install MO2 Stylesheets from Nexus Mods
+* Support multiple MO2 instances for the same game
+* Support the MO2 Collections plugin
 
-Once Beta status has leveled out, and everything works as it should, I will look into Wabbajack support.
+Collections are supported through the MO2 plugin that can be installed after MO2 installation.
+
+Nexus Premium is recommended for Collections. Non-Premium users may have to open a separate browser tab for each mod in a collection. This is a Nexus limitation, not a Kalium limitation.
+
+Once Beta features have stabilized and compatibility is reliable, I will look into Wabbajack support.
 
 Kalium is **not a replacement for MO2** and does not attempt to become another mod manager.
 
 ---
 
-### First setup
+## First Setup
 
 The setup wizard handles:
 
@@ -71,48 +103,80 @@ The setup wizard handles:
 
 ## Kalium vs. MO2
 
-| **Kalium manages**       | **MO2 manages**               |
-| ------------------------ | ----------------------------- |
-| Proton environment       | Your mods                     |
-| Wine prefixes            | Your load order               |
-| Steam integration        | Your plugins                  |
-| NXM registration         | Your profiles                 |
-| MO2 installation         | Mod installation              |
-| MO2 plugin installation  | Virtual file system operation |
-| Supporting tools         | Modding tools                 |
-| Steam library detection  | Your modded game environment  |
-| Game detection/binding   | Game INIs                     |
-| MO2 environment settings |                               |
-| USVFS configuration      |                               |
-| LOOT integration         |                               |
-| Backpatching support     |                               |
-| Diagnostics and repair   |                               |
-| MO2 INI *(paths, default theme, VFS max memory, etc)* |                      |
+| **Kalium manages**         | **MO2 manages**               |
+| -------------------------- | ----------------------------- |
+| Proton environment         | Your mods                     |
+| Wine prefixes              | Your load order               |
+| Steam integration          | Your plugins                  |
+| NXM registration           | Your profiles                 |
+| MO2 installation           | Mod installation              |
+| MO2 plugin installation    | Virtual file system operation |
+| Supporting tools           | Modding tools                 |
+| Steam library detection    | Your modded game environment  |
+| Game detection and binding | Game INIs                     |
+| MO2 environment settings   |                               |
+| USVFS configuration        |                               |
+| LOOT integration           |                               |
+| Backpatching support       |                               |
+| Diagnostics and repair     |                               |
+| MO2 INI configuration      |                               |
 
-Kalium may modify specific MO2 settings required for the environment, such as paths, managed-game information, USVFS settings, theme, and registered tools.
+Kalium may modify specific MO2 settings required for the environment, such as:
 
-It does **not** manage your mods, load order, profiles, or game INIs.
+* Paths
+* Managed-game information
+* USVFS settings
+* Theme
+* Registered tools
+* VFS memory settings
 
-| Modded method | Launch Option |
-| ------------- | ------------- |
-| **Play with MO2 mods (no SKSE)** | Launch the game `.exe` from inside MO2 | 
-| **Play with SKSE** | Launch `SKSE` from inside MO2 |
+It does **not** manage:
 
-> **Note:** When a Bethesda game updates versions, Kalium only sets up the environment. So, if the mod is for an older game version, Kalium will not magically make it work because MO2's job is to handle the mods. If the mod and game version are not compatible (e.g., mod is for 1.6.1170 Skyrim SE, but current version you play is 1.7.99+), then the mod will simply not work. It is up to you to check versions of your game and mod needs. No tool can will replace that.
+* Your mods
+* Your load order
+* Your profiles
+* Your game INIs
+* MO2's mod installation behavior
+
+### Launching Your Game
+
+| Modded method                   | Launch option                          |
+| ------------------------------- | -------------------------------------- |
+| **Play with MO2 mods, no SKSE** | Launch the game `.exe` from inside MO2 |
+| **Play with SKSE**              | Launch `SKSE` from inside MO2          |
+
+> **Note:** When a Bethesda game updates versions, Kalium only sets up and maintains the environment. It does not automatically make older mods compatible with newer game versions. If a mod requires Skyrim 1.6.1170 and you are running a different version, the mod may not work. Always check the game version and the version requirements of your mods.
+>
+> No tool can replace the need to verify game and mod version compatibility.
 
 ---
 
-[Check Launcher Compatibility for GOG, Heroic, Flatpak Steam, and Snap Steam support](https://github.com/bobbycomet/Kalium/wiki/Launcher-Compatibility)
+## Proton Compatibility
 
-If a Proton version gives you trouble, try **GE-Proton Latest**. Kalium supports Proton 10+, but you are **not locked to Proton 10+**. Different games and tools may work better with different Proton versions.
+If a Proton version gives you trouble, try **GE-Proton Latest**.
+
+Kalium supports Proton 10+, but you are **not locked to Proton 10+**.
+
+Different games, games versions, and tools may work better with different Proton versions.
+
+[Check Launcher Compatibility](https://github.com/bobbycomet/Kalium/wiki/Launcher-Compatibility)
+
+This includes compatibility information for:
+
+* Native Steam
+* Flatpak Steam
+* Snap Steam
+* GOG
+* Heroic
+* Epic
 
 ---
 
-## Supported Games
+## Backpatching
 
-See the [Supported Games](https://github.com/bobbycomet/Kalium/wiki/Supported-Games) page for the current compatibility list.
+Kalium provides Steam depot backpatching for supported games.
 
-Experimental Backpatching is currently available for selected versions of:
+Currently supported experimental backpatching includes selected versions of:
 
 * Skyrim Special Edition
 * Fallout 4
@@ -120,13 +184,39 @@ Experimental Backpatching is currently available for selected versions of:
 * Cyberpunk 2077
 * The Witcher 3
 
-Support and compatibility vary by game and Proton version. This may cause the game to crash, and you will have to validate files to get it working again, which means back to the newest release. I tried the manual way as well, same result.
+**Skyrim SE/AE backpatching is currently the most tested and confirmed working implementation.**
+
+Other games are experimental.
+
+Backpatching changes the game files and can cause the game to stop launching correctly depending on Steam, Proton, the selected game version, and the depot being used.
+
+If a backpatch causes problems, you may need to validate the game files through Steam. This will restore the newest available game version.
+
+Use backpatching only when you understand the game version and mod requirements you are trying to use.
+
+---
+
+## Supported Games
+
+See the [Supported Games](https://github.com/bobbycomet/Kalium/wiki/Supported-Games) page for the current compatibility list.
+
+Game support can depend on:
+
+* Game version
+* Proton version
+* Launcher
+* Installation location
+* Mod configuration
+* External tools
+* Game-specific requirements
+
+Kalium prepares the environment. It does not guarantee that every Windows game, mod, or tool will work through Proton.
 
 ---
 
 ## Installation
 
-1.2.0 now has tar and zip files for you to build the AppImage yourself, if the AppImage built does not work on your machine (GLIBC version is different for you, or similar issues). Just run `./build-appimage.sh` in tour terminal in the same location as the Kalium folder.
+Kalium provides an AppImage for normal installation.
 
 Download the latest AppImage from [Releases](https://github.com/bobbycomet/Kalium/releases).
 
@@ -137,26 +227,35 @@ chmod +x Kalium-*.AppImage
 
 The GUI is recommended for first-time setup.
 
-For advanced users, Kalium also provides a CLI:
+### Build the AppImage Yourself
+
+Kalium 1.2.0+ also provides `.tar` and `.zip` source/build packages.
+
+These are useful if the provided AppImage does not work on your system because of a GLIBC version difference or another compatibility issue.
+
+After extracting Kalium, run:
+
+```bash
+./build-appimage.sh
+```
+
+from the Kalium directory.
+
+---
+
+## CLI
+
+Kalium also provides a CLI for advanced users, diagnostics, and automated workflows.
+
+Example:
 
 ```bash
 ./Kalium-*.AppImage setup-mo2 -p /path/to/mo2 -n "My MO2"
 ```
 
-### First setup
+The CLI can be used for setup and supported diagnostics without requiring the GUI.
 
-The setup wizard handles:
-
-1. MO2 selection
-2. Game selection
-3. Proton selection
-4. Steam shortcut creation
-5. Proton/Wine environment configuration
-6. MO2 environment configuration
-7. Kalium Tools creation
-8. Instance registration
-
-**[Read the First Setup Guide →](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup)**
+See the [CLI / Diagnostics / Troubleshooting](https://github.com/bobbycomet/Kalium/wiki/CLI-Diagnostics-Troubleshooting) documentation for more information.
 
 ---
 
@@ -164,7 +263,15 @@ The setup wizard handles:
 
 Kalium can configure an existing MO2 installation without downloading another copy of MO2.
 
-If migrating from NaK, use **Existing MO2 Installation** and back up your mods and other important files first.
+If migrating from NaK:
+
+1. Select **Existing MO2 Installation**
+2. Select your existing MO2 installation
+3. Select the game and executable
+4. Select your Proton version
+5. Complete the setup
+
+Back up your mods and other important files before migration.
 
 A complete migration guide is available in the [Wiki](https://github.com/bobbycomet/Kalium/wiki).
 
@@ -174,14 +281,15 @@ A complete migration guide is available in the [Wiki](https://github.com/bobbyco
 
 ## Documentation
 
-* **[Wiki](https://github.com/bobbycomet/Kalium/wiki)** — Complete documentation
-* **[Distro/kernel Compatibility](https://github.com/bobbycomet/Kalium/wiki/Kalium-Compatibility)** — See if your set up is ready to go
-* **[First Setup](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup)** — Set up your first MO2 instance
-* **[Installation](https://github.com/bobbycomet/Kalium/wiki/Installation)** — Detailed environment setup
-* **[Supported Games](https://github.com/bobbycomet/Kalium/wiki/Supported-Games)** — Game compatibility
-* **[CLI / Diagnostics / Troubleshooting](https://github.com/bobbycomet/Kalium/wiki/CLI-Diagnostics-Troubleshooting)** — Advanced users and troubleshooting
-* **[Screenshots](https://github.com/bobbycomet/Kalium/tree/main/screenshots)** — GUI and feature screenshots
-* **[Standalone LOOT compatibility and accuracy](https://github.com/bobbycomet/Kalium/wiki/FAQs#how-accurate-is-the-standalone-loot-when-run-in-the-environment)
+* **[Wiki](https://github.com/bobbycomet/Kalium/wiki)**: Complete documentation
+* **[Distro/kernel Compatibility](https://github.com/bobbycomet/Kalium/wiki/Kalium-Compatibility)**: Check if your setup is ready
+* **[First Setup](https://github.com/bobbycomet/Kalium/wiki#3-first-mo2-setup)**: Set up your first MO2 instance
+* **[Installation](https://github.com/bobbycomet/Kalium/wiki/Installation)**: Detailed environment setup
+* **[Supported Games](https://github.com/bobbycomet/Kalium/wiki/Supported-Games)**: Game compatibility
+* **[Launcher Compatibility](https://github.com/bobbycomet/Kalium/wiki/Launcher-Compatibility)**: Steam, GOG, Heroic, and other launcher support
+* **[CLI / Diagnostics / Troubleshooting](https://github.com/bobbycomet/Kalium/wiki/CLI-Diagnostics-Troubleshooting)**: Advanced users and troubleshooting
+* **[Screenshots](https://github.com/bobbycomet/Kalium/tree/main/screenshots)**: GUI and feature screenshots
+* **[Standalone LOOT compatibility and accuracy](https://github.com/bobbycomet/Kalium/wiki/FAQs#how-accurate-is-the-standalone-loot-when-run-in-the-environment)**: LOOT information
 
 ---
 
