@@ -2,7 +2,7 @@
 
 **Linux modding environment manager for Steam, Proton, and Mod Organizer 2.**
 
-Just came from Windows and want to mod your games the same way as you did there? Kalium makes that happen.
+Just to Linux from Windows and want to mod your games the same way as you did there? Kalium makes that happen.
 
 Kalium prepares and maintains the environment required to run the Windows version of [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer) on Linux through Steam + Proton.
 
