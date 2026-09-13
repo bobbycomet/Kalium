@@ -25,6 +25,8 @@ It handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configuratio
 Kalium can:
 
 * Install or attach an existing MO2 installation
+* MO2 Repair
+* Backpatch game versions, Skyrim SE/AE confirmed working, the other games are in Beta for backpatching
 * Configure Proton and Wine prefixes per MO2 instance
 * Register MO2 as a Steam non-Steam game
 * Register and reconnect Nexus Mods **NXM** links
@@ -39,7 +41,7 @@ Kalium can:
 * Provide diagnostics and repair tools
 * Provide Steam depot backpatching for supported games
 * Support CLI-based setup and diagnostics
-* Provide ongoing GOG and Heroic compatibility work [Check Beta Status](#Beta-Status)
+* Provide GOG, Flatpak Steam, Snap Steam, and Epic support
 * Install standalone Windows LOOT with the WINEPREFIX registration per instance
 * Install [Stylesheets](https://github.com/bobbycomet/Kalium/blob/main/Screenshots/Fluency_dark.png) from nexus just like Windows, drag and drop files in the stylesheets folder, and they just work
 * **Collections** are supported via the MO2 plugin you can choose to install after MO2 install (Nexus premium is best for this feature, as non-premium members will open as many tabs as there are mods in the collection. This is a Nexus limitation, not Kalium's).
@@ -83,7 +85,7 @@ The setup wizard handles:
 | MO2 environment settings |                               |
 | USVFS configuration      |                               |
 | LOOT integration         |                               |
-| Backpatching support Experimental    |                               |
+| Backpatching support     |                               |
 | Diagnostics and repair   |                               |
 | MO2 INI *(paths, default theme, VFS max memory, etc)* |                      |
 
