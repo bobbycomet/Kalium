@@ -14,6 +14,10 @@ Kalium handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configur
 
 [Repair MO2 feature and troubleshooting MO2 plugin failures](https://github.com/bobbycomet/Kalium/wiki/Repair-MO2-and-native-plugin-failures)
 
+[Using Bodyslide studio for Skyrim SE/AE](https://youtu.be/UlApEdh0lG0)
+
+[Using Pandora Behaviour Engine for Skyrim SE/AE](https://youtu.be/hLWHZsQkulI)
+
 ---
 
 ## What's New in 1.2.x
