@@ -12,6 +12,8 @@ Kalium handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configur
 
 [Setup Video Guide](https://youtu.be/Iy2E3C19CE4)
 
+[Repair MO2 feature and troubleshooting MO2 plugin failures](https://github.com/bobbycomet/Kalium/wiki/Repair-MO2-and-native-plugin-failures)
+
 ---
 
 ## What's New in 1.2.x
