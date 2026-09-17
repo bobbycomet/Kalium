@@ -20,6 +20,8 @@ Kalium handles the Steam, Proton, Wine, NXM, USVFS, and supporting-tool configur
 
 [Using Pandora Behaviour Engine for Skyrim SE/AE](https://youtu.be/hLWHZsQkulI)
 
+The tool Nexus tool VRAMr is currently not working with this.
+
 ---
 
 ## What's New in 1.2.x
