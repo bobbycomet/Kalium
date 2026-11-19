@@ -1,4 +1,4 @@
-# Kalium 1.2.1
+# Kalium 1.3.0
 
 **Linux modding environment manager for Steam, Proton, and Mod Organizer 2. Tested with 500 mods in one save.**
 
