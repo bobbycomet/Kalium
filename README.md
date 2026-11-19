@@ -24,6 +24,31 @@ The tool Nexus tool VRAMr is currently not working with this.
 
 ---
 
+V1.3.0 introduces Wabbajack support, still in beta.
+
+## jackify-engine (used by the "Kalijack engine")
+
+- Project: https://github.com/Omni-guides/dev-jackify-engine (by Omni-guides)
+- License: GPL-3.0
+- A fork of Wabbajack's wabbajack-cli (https://github.com/wabbajack-tools/wabbajack, GPL-3.0).
+- Kalium runs the upstream binary unmodified. "Kalijack" is Kalium's name for its integration layer around Jackify's engine; it is not an official Jackify or Wabbajack product and is not endorsed by their authors.
+
+## Jackify (optional AppImage manager)
+
+- Project: https://github.com/Omni-guides/Jackify (by Omni-guides)
+- Kalium can download, version-check and update the official Jackify AppImage. It is never modified.
+- Jackify's AppImage can see Kalium's instances.
+
+## CLF3 (optional alternative engine)
+
+- Project: https://github.com/SulfurNitride/CLF3
+- License: MIT
+- Its documentation states that BSA/DDS output is not byte-identical to Wabbajack's.
+
+## NaK
+
+- Project: https://github.com/SulfurNitride/NaK (archived), the predecessor that inspired Kalium.
+
 ## What's New in 1.2.x
 
 ### MO2 Repair
