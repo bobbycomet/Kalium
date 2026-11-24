@@ -26,6 +26,8 @@ The tool Nexus tool VRAMr is currently not working with this.
 
 V1.3.0 introduces Wabbajack support, still in beta.
 
+> Older USVFS 0.5.7.2 tests were done on a drive that was failing, new tests show it is tinning faster.
+
 ## jackify-engine (used by the "Kalijack engine")
 
 - Project: https://github.com/Omni-guides/dev-jackify-engine (by Omni-guides)
